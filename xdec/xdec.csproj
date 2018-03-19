@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD81F55A-09F5-4AE9-A19D-513CC855727E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>xdec</RootNamespace>
+    <AssemblyName>xdec</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CConsole\ColorAlternator.cs" />
+    <Compile Include="CConsole\ColorAlternatorFactory.cs" />
+    <Compile Include="CConsole\ColorExtensions.cs" />
+    <Compile Include="CConsole\ColorfulConsoleBack.cs" />
+    <Compile Include="CConsole\ColorfulConsoleFront.cs" />
+    <Compile Include="CConsole\ColorManager.cs" />
+    <Compile Include="CConsole\ColorManagerFactory.cs" />
+    <Compile Include="CConsole\ColorMapper.cs" />
+    <Compile Include="CConsole\ColorMappingException.cs" />
+    <Compile Include="CConsole\COLORREF.cs" />
+    <Compile Include="CConsole\ColorStore.cs" />
+    <Compile Include="CConsole\ConsoleAccessException.cs" />
+    <Compile Include="CConsole\DefaultFonts.cs" />
+    <Compile Include="CConsole\ExtensionMethods.cs" />
+    <Compile Include="CConsole\Figlet.cs" />
+    <Compile Include="CConsole\FigletFont.cs" />
+    <Compile Include="CConsole\Formatter.cs" />
+    <Compile Include="CConsole\FrequencyBasedColorAlternator.cs" />
+    <Compile Include="CConsole\GradientGenerator.cs" />
+    <Compile Include="CConsole\IPrototypable.cs" />
+    <Compile Include="CConsole\MatchLocation.cs" />
+    <Compile Include="CConsole\Pattern.cs" />
+    <Compile Include="CConsole\PatternBasedColorAlternator.cs" />
+    <Compile Include="CConsole\PatternCollection.cs" />
+    <Compile Include="CConsole\StyleClass.cs" />
+    <Compile Include="CConsole\StyledString.cs" />
+    <Compile Include="CConsole\Styler.cs" />
+    <Compile Include="CConsole\StyleSheet.cs" />
+    <Compile Include="CConsole\TaskQueue.cs" />
+    <Compile Include="CConsole\TextAnnotator.cs" />
+    <Compile Include="CConsole\TextFormatter.cs" />
+    <Compile Include="CConsole\TextPattern.cs" />
+    <Compile Include="CConsole\TextPatternCollection.cs" />
+    <Compile Include="Crypt.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
