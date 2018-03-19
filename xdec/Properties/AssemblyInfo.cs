@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RC4Dec")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("xdec")]
+[assembly: AssemblyDescription("Xshel 5 Password Decrypter")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RC4Dec")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("xdec")]
+[assembly: AssemblyCopyright("Copyright © synmuffin 2017 - 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
